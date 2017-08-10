@@ -42,6 +42,11 @@
       "react"
     ]
   },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
   "scripts": {
     "test": "jest"
   }
