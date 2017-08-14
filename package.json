@@ -49,6 +49,6 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "babel index.jsx | uglifyjs - --output dist/index.min.js"
+    "build": "babel index.jsx -o dist/index.js && uglifyjs dist/index.js > dist/index.min.js"
   }
 }
