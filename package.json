@@ -1,7 +1,7 @@
 {
   "name": "react-seed-component",
   "version": "1.0.0",
-  "description": "Reeact component to edit numeric values in format of local honoring thousands and decimal separators, with en-US as fallback.",
+  "description": "Reeact seed component for development.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lsiden/local-number-input.git"
@@ -21,7 +21,8 @@
   "entry": "dist/index.min.js",
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "webpack": "^3.5.5"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -49,6 +50,6 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "babel index.jsx -o dist/index.js && uglifyjs dist/index.js > dist/index.min.js"
+    "build": "webpack"
   }
 }
