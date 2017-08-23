@@ -35,7 +35,8 @@
     "jest": "^20.0.4",
     "react-test-renderer": "^15.6.1",
     "regenerator-runtime": "^0.10.5",
-    "uglify-js": "^3.0.27"
+    "uglify-js": "^3.0.27",
+    "webpack-dev-server": "^2.7.1"
   },
   "babel": {
     "presets": [
@@ -49,7 +50,8 @@
     }
   },
   "scripts": {
-    "test": "jest",
-    "build": "webpack"
+    "test": "NODE_ENV=test jest",
+    "start": "NODE_ENV=dev webpack-dev-server",
+    "build": "NODE_ENV=prod webpack"
   }
 }

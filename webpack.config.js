@@ -2,7 +2,7 @@ const path = require('path')
 
 const config = {
 	entry: {
-		app: ['./src/index.jsx']
+		app: ['./src/app-root.jsx']
 	},
 	output: {
 		filename: 'bundle.js',
@@ -19,10 +19,10 @@ const config = {
 		]
 	},
 	devServer: {
-		contentBase: './dist',
+		contentBase: '.',
 		inline: true,
 	},
-	devtool: process.env.NODE_ENV === 'prod' ? "source-map" : "eval-source-map",
+	devtool: process.env.NODE_ENV.match(/^prod/i) ? "source-map" : "eval-source-map",
 	plugins: [
 	],
 };
