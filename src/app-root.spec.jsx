@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 
-import AppRoot from './app-root'
+import * as Westside from './app-root'
 
-describe('AppRoot', function() {
+describe('Westside.AlcApp', function() {
 	it('renders', function() {
-		expect(shallow(<AppRoot />).contains('React Seed Component'))
+		expect(shallow(<Westside.AlcApp />).contains('React Seed Component'))
 	})
 })
