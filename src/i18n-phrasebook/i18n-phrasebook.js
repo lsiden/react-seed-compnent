@@ -5,7 +5,7 @@ export default class {
 		this.phrasebooks = phrasebooks
 		this.lang = phrasebooks[lang] ? lang : 'en'
 		this.phrasebook = phrasebooks[this.lang] ? phrasebooks[this.lang] : {}
-		debug('Available languages are: %s', Object.getOwnPropertyNames(phrasebooks).join(', '))
+		debug('Provided languages are: %s', Object.getOwnPropertyNames(phrasebooks).join(', '))
 		debug('language set to %s', this.lang)
 		debug('Phrase-book has %d entries for  %s', Object.getOwnPropertyNames(this.phrasebook).length, this.lang)
 	}
