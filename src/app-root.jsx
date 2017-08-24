@@ -6,3 +6,9 @@ export default class AppRoot extends React.Component {
 		return <div>React Seed Component</div>
 	}
 }
+
+const el = document.getElementById('app-root')
+
+if (el) {
+	ReactDOM.render(<AppRoot />, el)
+}
