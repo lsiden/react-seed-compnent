@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default class AppRoot extends React.Component {
+export class AlcApp extends React.Component {
 	render() {
 		return <div>React Seed Component</div>
 	}
